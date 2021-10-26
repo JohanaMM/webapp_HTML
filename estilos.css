@@ -1,0 +1,596 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    
+
+html {min-height: -webkit-fill-available;
+     }
+
+* {padding: 0;
+   margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: roboto, sans-serif;
+  }
+
+img {max-width:100%; height:auto;
+}
+
+ul {list-style: none;
+}
+
+
+/*Todo esto es del header */
+
+.material-icons {padding-right: .25em;
+}
+
+header .contenedor {display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+}
+
+#logo { width: 9em;
+        padding: 1em 0 1em 1em;
+    display: block;
+      }
+
+#llamamenu {
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            z-index: 9999;
+   
+    
+}
+
+#llamamenu i {padding: 1em 1em 1em 0;
+                
+}
+
+button:focus {border:none; 
+                outline:0;
+}
+
+button {background-color: transparent;
+        border: none;
+        color: #3EBBD1;
+}
+
+header nav {display: block;
+}
+
+header {position: fixed; top:0; left:0;
+    background-color: white;
+    width: 100%;
+}
+
+header nav a {color: white;
+                padding: 1em 1.5em 1em 1em;
+                text-decoration: none;
+                display: flex;
+                justify-content:flex-start;
+                align-items:center;
+}
+
+header nav a:hover {background-color: #2d8898; 
+}
+
+header nav ul {top: 0;
+        left: 130%;
+        width: 58%;
+        height: 90vh;
+    transition: all .6s ease;
+    position: fixed;
+    background-color: #3EBBD1;
+    border-radius: 0 0 0 2em;
+    box-shadow: .1em .1em 1.2em .1em #808080;
+    padding-top: 3.3em;
+}
+
+.desplegado {left:42%;
+            }
+
+.colorBlanco {color: white;
+}
+
+
+
+picture {display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* HASTA ACÁ */
+
+body {background-color: #f5f5f5}
+
+.bienvenido {background-color: #F18D65;
+    color:white;
+    padding: 1em 0.5em 1.3em 0.5em;
+    width: 100%;
+    max-width: 80em;
+}
+
+.bienvenido h1 {font-weight: 700;
+                font-size: 1.9em;
+}
+
+.bienvenido p {font-weight: 400;
+                font-size: 0.9em;
+}
+
+main {display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.5em;
+}
+
+main nav {display:block;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 500;
+    margin-top: 2em;
+    align-items: center;
+}
+
+main nav a {background-color: #3EBBD1;
+    width: 12em;
+    height: 2.6em;
+        border-radius: 5em;
+        color: white;
+        text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+main nav a:hover {background-color: #2d8898; 
+}
+
+.bolsones {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    }
+
+.subtitulo {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    }
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    }
+
+.contenido ul li {padding-top: 2em}
+
+.contenido input {
+    height: 2em;
+    border: 1px solid rgb(218,218,218);
+    border-radius: .5em;
+    width: 5em;
+}
+
+.contenido input:focus {
+    border:1px solid rgb(218,218,218); 
+                outline:0;
+    padding-top: .1em;
+}
+
+.comprar a { 
+    margin-top: 4em; 
+    width: 15em;
+    font-family: 'roboto', serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    background-color: #3EBBD1;
+    padding: 0.6em;
+       border-radius: 2em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, .55);
+    justify-content: center;
+    }
+
+.registrarse a { 
+    margin-top: 2em; 
+    width: 15em;
+    font-family: 'roboto', serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #3EBBD1;
+    padding: 0.6em;
+    border-radius: 2em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, .55);
+    }
+
+h3 {
+    padding-top: 3em;
+    padding-bottom: 0.2em;
+    }
+
+.bolsa2  {
+font-size: 1.3em;
+    
+    }
+
+h5 {
+    font-size: 1.5em;
+    padding-top: 1em;
+    }
+
+footer {font-weight: 400;
+        font-size: 0.8em;
+        padding: 1em 0.8em 3em 0.8em;
+    border-top: 5em;
+    border-top: 1px inset;
+    border-bottom-width: 1px;
+    border-bottom-style: inset;
+    border-bottom-color: rgb(0, 0, 0, 0.3);
+    
+}
+
+
+.quienessomos {font-size: 1em;
+               color: #F18D65;
+               font-family: roboto;
+               display: flex;
+              flex-direction:column;
+}
+
+.iniciarsesion {
+    
+    display: flex;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.historia h3 {font-size: 1em;
+    font-style: normal;
+    color: #2d8898;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+
+.historia a {font-size: 1em;
+    font-style: normal;
+    color: #2d8898;
+    text-align: left;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: .5em 0 .5em 0;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+.historia p {font-size: 1em;
+    font-style: normal;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 1em 0 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+.autoridades {font-size: 1em;
+    font-style: normal;
+    color: #F18D65;
+    text-align: left;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: .5em;    
+    flex-direction: column;
+    font-family: 'roboto', serif;
+    flex-direction: row;
+    max-width: 100%;    
+   
+}
+
+.autoridades img {flex-wrap: wrap;
+                 flex-direction: column;
+                  max-width: 30em;
+                  border-radius: 15em;
+                  width: 5em;
+                  padding: .5em;
+}
+
+.autoridades h3 {text-align: center;
+                flex-direction: column;
+                color: #2d8898;
+                
+}
+
+
+              
+.actividades h1 {color:#2d8898;
+                 padding: .5em;
+}
+
+.actividades p {font-size: 1em;
+                font-style: normal;
+                color: black;
+                text-align: left;
+                 display: flex;
+                text-decoration: none;
+                width: 100%;
+                 height: 100%;
+                padding: 0 1em 0 1em;
+                font-family: 'roboto', serif;
+                flex-wrap: wrap;
+                 
+}
+
+.actividades a {color: white;
+                background-color:#F18D65;
+                text-align: left;
+                padding: .5em;
+                width: 100%;
+                flex-wrap: wrap
+                box-sizing: border-box;
+                border-width: 2px;
+                border-style: outset;
+                border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+                display: flex;        
+                font-size: 1em;
+                color: rgb(231, 243, 223);
+                float: right;
+                align-content: center;
+    
+}  
+             
+.acordion-content {font-size: 1em;
+    font-style: normal;
+    color: #2d8898;
+    text-align: left;
+    text-decoration: none;
+    padding: .5em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+    flex-wrap: wrap;
+    display: none;
+    overflow: auto;
+    padding-top: 3em;
+}
+
+
+
+.accordion-titulo { position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+}
+
+.accordion-titulo.open {
+    background: #16a085;
+    color: #fff;
+}
+.accordion-titulo:hover {
+    background: #1abc9c;
+}
+ 
+.accordion-titulo span.toggle-icon:before {
+    content:"+"; 
+ 
+}
+ 
+.accordion-titulo.open span.toggle-icon:before {
+    content:"-";
+}
+ 
+.accordion-titulo span.toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1em;
+    font-weight:bold;
+}
+
+#container-main{
+    margin:40px auto;
+    width:95%;
+    min-width:320px;
+    max-width:960px;
+}
+
+#container-main h1{
+    font-size: 40px;
+    text-shadow:4px 4px 5px #16a085;
+}
+
+.feriaitinerante {font-size: 1em;
+               color: #F18D65;
+               font-family: roboto;
+               display: flex;
+              flex-direction:column;
+}
+
+
+
+.feria h1 {font-size: 1em;
+    font-style: normal;
+    color: #2d8898;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+.feria p {font-size: 1em;
+    font-style: normal;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 1em 0 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+
+
+.envios {font-size: 1em;
+               color: #F18D65;
+               font-family: roboto;
+               display: flex;
+              flex-direction:column;
+}
+
+
+.instrucciones h1 {font-size: 1em;
+    font-style: normal;
+    color: #2d8898;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+.instrucciones p {font-size: 1em;
+    font-style: normal;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 1em 0 1em;
+    flex-direction: column;
+    font-family: 'roboto', serif;
+}
+
+
+
+.datos { padding: 2em 2em 0 2em;
+        align-content: center;
+         display: block;
+         flex-wrap:wrap;
+}
+
+.datos ul li {padding-bottom: 2em;}
+
+.datos input {background-color: white;
+height: 2em;
+border: 1px solid rgb(218,218,218);
+border-radius: 2em;
+width: 20em; }
+
+.datos textarea {background-color: white;
+height: 7em;
+border: 1px solid rgb(218,218,218);
+border-radius: 1em;
+width: 20em;
+}
+
+.datos input:focus {
+    border:1px solid rgb(218,218,218); 
+                outline:0;}
+
+.datos textarea:focus {
+    border:1px solid rgb(218,218,218); 
+                outline:0;
+padding-top: 1em;}
+
+
+/* A PARTIR DE ACÁ ES RESPONSIVE */
+
+
+@media screen and (min-width: 600px) {
+    
+    header nav ul {top: 0;
+       width: 30%;
+        height: 65vh;
+       
+    }
+
+    .desplegado {left: 70%;
+            }
+    
+    
+    main nav { flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #logo { width: 14em;
+        padding: 1em 0 1em 1em;
+      }
+    
+    main nav a {margin: 0 1em 2em 1em;
+    }
+    
+    footer div { flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+    .historia {max-width: 70%;}
+    
+    .autoridades {max-width: 70%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  padding-top: 3em;
+    }
+    
+    .actividades {max-width: 70%;}
+    
+    .feria {max-width: 70%;}
+    
+    .instrucciones {max-width: 70%;}
+    
+    .datos input {width: 35em;}
+    
+    .datos textarea {width: 35em;
+                     height: 10em;}
+    
+    
+    img {max-width: 100%;
+        height: auto;
+    align-content: center;}
+    
+    
